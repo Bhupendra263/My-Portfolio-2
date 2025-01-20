@@ -1,68 +1,61 @@
-// 
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+// import React from 'react'
 
-import CanvasLoader from "../Loader";
+// const Earth = () => {
+//   return (
+//     <div>
+//       <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzE2aWVia215aTNyOW1tMHJoZ2xkeHN1NXVlZ3JscnZoOThqZXIybCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/aN9GqoR7OD3nq/giphy.webp"  width="500px"/>
+//       <div>
+//         <br />
+//         <br />
+//         <br />
+//         <br />
+//         <br />
+//         <br />
+//         <br />
+//         <br />
+//       </div>
+//       <div>
+//         <img src="https://lionvisionits.com/wp-content/uploads/2018/01/Thankyou.gif"  width="500px"/>
+//       </div>
+//     </div>
+//   )
+// }
 
-const Earth = ({ isMobile }) => {
-  const earth = useGLTF("./planet/scene.gltf");
+// export default Earth
+import React from 'react'
 
+const Earth = () => {
   return (
-    <primitive
-      object={earth.scene}
-      scale={isMobile ? 1.5 : 2.5}
-      position-y={isMobile ? -0.5 : 0}
-      rotation-y={0}
-    />
-  );
-};
+    <div className="flex flex-col items-center">
+      <img 
+        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzE2aWVia215aTNyOW1tMHJoZ2xkeHN1NXVlZ3JscnZoOThqZXIybCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/aN9GqoR7OD3nq/giphy.webp" 
+        width="500px" 
+        alt="Earth Animation" 
+      />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
+      <div className="mt-10">
+        <a 
+          href="https://amber-lilla-52.tiiny.site" 
+          download="My_Resume" 
+          className="text-violet-500 hover:text-gray-500 text-3xl font-bold "
+        >
+          Download My Resume
+        </a>
+       
+      </div>
 
-const EarthCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+      
+    </div>
+  )
+}
 
-  useEffect(() => {
-    // Detect screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
-
-  return (
-    <Canvas
-      shadows
-      frameloop="demand"
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{
-        fov: isMobile ? 60 : 45, // Wider field of view for mobile
-        near: 0.1,
-        far: 200,
-        position: isMobile ? [-3, 2, 4] : [-4, 3, 6],
-      }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          autoRotate
-          enableZoom={!isMobile}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Earth isMobile={isMobile} />
-
-        <Preload all />
-      </Suspense>
-    </Canvas>
-  );
-};
-
-export default EarthCanvas;
+export default Earth

@@ -42,7 +42,7 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Web Developement",
       icon: web,
     },
     {
@@ -50,7 +50,7 @@ import {
       icon: mobile,
     },
     {
-      title: "Problem Solving in Java",
+      title: "Problem Solving ",
       icon: backend,
     },
     {
@@ -97,10 +97,6 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
@@ -127,6 +123,7 @@ import {
         "Acquired knowledge in data analysis, visualization, and machine learning, applying these skills to real-world scenarios.",
         "Applied AI-driven problem-solving approaches to optimize workflows and derive actionable insights from data.",
       ],
+      certificate_link: "https://www.credly.com/badges/d9f49ee2-e3c5-42c3-a396-91d790d9804a",
     },
     {
       title: "Java Certified on HackerRank",
@@ -140,6 +137,7 @@ import {
         "Gained recognition for writing clean, optimized, and maintainable Java code.",
         "Certified on a globally recognized platform, validating technical expertise in Java programming.",
       ],
+      certificate_link: "https://www.hackerrank.com/certificates/3f4658bcdf06",
     },
     {
       title: "SQL Certified on HackerRank",
@@ -153,6 +151,7 @@ import {
         "Experienced in analyzing complex database schemas and implementing solutions to solve real-world data challenges.",
         "The HackerRank SQL certification showcases validated skills, enhancing credibility for data-centric roles.",
       ],
+      certificate_link: "https://www.hackerrank.com/certificates/a277cdc5da11?utm_medium=email&utm_source=mail_template_1393&utm_campaign=hrc_skills_certificate",
     },
     {
       title: "Full stack Developement",
@@ -166,6 +165,7 @@ import {
         "Gained hands-on experience through projects, developing user-friendly and scalable websites with modern technologies.",
         "Learned industry standards for web performance optimization, accessibility, and responsive design to deliver high-quality solutions.",
       ],
+      certificate_link: "https://example.com/java-certification",
     },
   ];
   
@@ -218,6 +218,7 @@ import {
       ],
       image: carrent,
       source_code_link: "https://github.com/Bhupendra263/",
+      live_demo_link: "https://employee-management-system-orpin.vercel.app/",
     },
     {
       name: "Real Time Device Tracking App",
@@ -246,6 +247,7 @@ import {
       ],
       image: jobit,
       source_code_link: "https://github.com/Bhupendra263/",
+      live_demo_link: "https://8c9b5xp9-3000.inc1.devtunnels.ms/",
     },
     {
       name: "Job Portal System -> Opportunity Sphere",
@@ -271,6 +273,7 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/Bhupendra263/",
+      live_demo_link: "https://username.github.io/portfolio",
     },
     
   ];
