@@ -247,7 +247,7 @@ import {
       ],
       image: jobit,
       source_code_link: "https://github.com/Bhupendra263/",
-      live_demo_link: "https://8c9b5xp9-3000.inc1.devtunnels.ms/",
+      live_demo_link: "https://real-time-device-tracking-app-jbxm.onrender.com/",
     },
     {
       name: "Job Portal System -> Opportunity Sphere",
