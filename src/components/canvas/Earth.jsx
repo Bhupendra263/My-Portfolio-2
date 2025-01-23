@@ -44,7 +44,7 @@ const Earth = () => {
       
       <div className="mt-10">
         <a 
-          href="https://amber-lilla-52.tiiny.site" 
+          href="" 
           download="My_Resume" 
           className="text-violet-500 hover:text-gray-500 text-3xl font-bold "
         >
