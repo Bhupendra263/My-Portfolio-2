@@ -273,7 +273,7 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/Bhupendra263/",
-      live_demo_link: "https://username.github.io/portfolio",
+      live_demo_link: "https://job-portal-frontend-azure.vercel.app/",
     },
     
   ];
