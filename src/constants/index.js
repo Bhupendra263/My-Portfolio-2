@@ -50,7 +50,7 @@ import {
       icon: mobile,
     },
     {
-      title: "Problem Solving ",
+      title: "Problem Solving(Java) ",
       icon: backend,
     },
     {
